@@ -1,0 +1,21 @@
+.ทำเนียบ{
+    font-size: xx-large;
+}
+.ตาราง{
+    display: flex;
+    flex-direction: row;
+}
+.ชื่อ{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin: 5px;
+    color: transparent;
+    transition-duration: 0.3s;
+}
+.ชื่อ:hover{
+    width: 200px;
+    height: 200px;
+    color: white;
+   
+}

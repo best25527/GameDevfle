@@ -1,0 +1,36 @@
+    #dan {
+        color: darkred;
+    }
+    #Text:focus {
+        background-color: aqua;
+    }
+
+    .container {
+        height: 500px;
+        border: 5px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .Box {
+        width: 100px;
+        height: 100px;
+        transition-duration: 0.3s;
+        color: transparent;
+    }
+    .Box:focus{
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        color: black;
+    }
+    .red {
+        background-color: chocolate;
+    }
+    .blue {
+        background-color: blue;
+    }
+    .green{
+        background-color: green;
+    }
