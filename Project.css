@@ -1,0 +1,136 @@
+
+body{
+    background-color: white;
+}
+
+#Title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0;
+    width: 450px;
+}
+
+#FirstText {
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 450px;
+
+}
+
+.ButtonChoose {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 450px;
+}
+
+.PBresult {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 220px;
+    
+}
+
+
+.Presult {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+
+    width: 196px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Bresult {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    
+    width: 196px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ResultText {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 450px;
+    margin-top: 0px;
+    padding:5px ;
+}
+
+.ScoreReset {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    width: 450px;
+}
+
+.WinScore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 450px;
+}
+
+.LoseScore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 450px;
+}
+
+.DrawScore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 450px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 10px;
+
+}
+.ScorePoint{
+    width: 450px;
+}
+
+.TitleBox {
+    width: 450px;
+}
+
+.FirstTextBox {
+    width: 450px;
+}
+
+.choose {
+    margin: 10px;
+}
+
+#WinCount {
+    margin-left: 5px;
+}
+#LoseCount {
+    margin-left: 5px;
+}
+#DrawCount {
+    margin-left: 5px;
+}
+
+#botresultimg {
+    transform: scaleX(-1);
+}
