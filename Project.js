@@ -101,7 +101,7 @@ function Scissor() {
     else if(Botinput == 0){
         console.log("Lose")
         OutputResult.innerText = "Lose"
-        BotResult.innerText = "Bot choose Rock"
+        BotResult.innerText = "Bot chooses Rock"
         PlayerResult.innerText = "Player chooses Scissor"
         LoseCount= Number(LoseCount) + 1
         LoseCountHTML.innerText = LoseCount
@@ -111,7 +111,7 @@ function Scissor() {
     else{
         console.log("Win")
       OutputResult.innerText = "Win"
-      BotResult.innerText = "Bot choose Paper"
+      BotResult.innerText = "Bot chooses Paper"
       PlayerResult.innerText = "Player chooses Scissor"
       WinCount= Number(WinCount) + 1
       WinCountHTML.innerText = WinCount
