@@ -6,9 +6,13 @@ DrawCountHTML = document.getElementById("DrawCount")
 PlayerResult = document.getElementById("playerresult")
 BotResultImg = document.getElementById("botresultimg")
 PlayerResultImg = document.getElementById("playerresultimg")
+CountRound = document.getElementById("Round")
+RoundText = document.getElementById("RoundText")
 WinCount = 0
 LoseCount = 0
 DrawCount = 0
+RoundCount = 0
+
 console.log(Number(WinCount))
 function Random(){
     Botinput = Math.floor((Math.random() * 100))% 3
@@ -19,6 +23,7 @@ console.log(OutputResult)
 
 function Rock() {
     Random()
+    RoundText.innerText = "Round"
     if (Botinput == 0){
         console.log("Draw")
       OutputResult.innerText = "Draw"
@@ -28,6 +33,9 @@ function Rock() {
       DrawCountHTML.innerText = DrawCount
       PlayerResultImg.src = "Rock.png"
       BotResultImg.src = "Rock.png"
+      RoundCount = Number(RoundCount) + 1
+      CountRound.innerText = RoundCount
+
     }
     else if(Botinput == 1){
         console.log("Lose")
@@ -38,6 +46,8 @@ function Rock() {
         LoseCountHTML.innerText = LoseCount
         PlayerResultImg.src = "Rock.png"
         BotResultImg.src = "Paper.png"
+        RoundCount = Number(RoundCount) + 1
+      CountRound.innerText = RoundCount
     }
     else{
         console.log("Win")
@@ -48,11 +58,14 @@ function Rock() {
       WinCountHTML.innerText = WinCount
       PlayerResultImg.src = "Rock.png"
       BotResultImg.src = "Scissor.png"
+      RoundCount = Number(RoundCount) + 1
+      CountRound.innerText = RoundCount
     }
     console.log(Botinput)
 }
 function Paper() {
     Random()
+    RoundText.innerText = "Round"
     if (Botinput == 1){
         console.log("Draw")
       OutputResult.innerText = "Draw"
@@ -62,6 +75,8 @@ function Paper() {
       DrawCountHTML.innerText = DrawCount
       PlayerResultImg.src = "Paper.png"
       BotResultImg.src = "Paper.png"
+      RoundCount = Number(RoundCount) + 1
+      CountRound.innerText = RoundCount
     }
     else if(Botinput == 2){
         console.log("Lose")
@@ -72,6 +87,8 @@ function Paper() {
       LoseCountHTML.innerText = LoseCount
       PlayerResultImg.src = "Paper.png"
       BotResultImg.src = "Scissor.png"
+      RoundCount = Number(RoundCount) + 1
+      CountRound.innerText = RoundCount
     }
     else{
         console.log("Win")
@@ -82,12 +99,15 @@ function Paper() {
       WinCountHTML.innerText = WinCount
       PlayerResultImg.src = "Paper.png"
       BotResultImg.src = "Rock.png"
+      RoundCount = Number(RoundCount) + 1
+      CountRound.innerText = RoundCount
     }
     console.log(Botinput)
 }
 
 function Scissor() {
     Random()
+    RoundText.innerText = "Round"
     if (Botinput == 2){
         console.log("Draw")
       OutputResult.innerText = "Draw"
@@ -97,6 +117,8 @@ function Scissor() {
       DrawCountHTML.innerText = DrawCount
       PlayerResultImg.src = "Scissor.png"
       BotResultImg.src = "Scissor.png"
+      RoundCount = Number(RoundCount) + 1
+      CountRound.innerText = RoundCount
     }
     else if(Botinput == 0){
         console.log("Lose")
@@ -107,6 +129,8 @@ function Scissor() {
         LoseCountHTML.innerText = LoseCount
         PlayerResultImg.src = "Scissor.png"
         BotResultImg.src = "Rock.png"
+        RoundCount = Number(RoundCount) + 1
+      CountRound.innerText = RoundCount
     }
     else{
         console.log("Win")
@@ -117,6 +141,8 @@ function Scissor() {
       WinCountHTML.innerText = WinCount
       PlayerResultImg.src = "Scissor.png"
       BotResultImg.src = "Paper.png"
+      RoundCount = Number(RoundCount) + 1
+      CountRound.innerText = RoundCount
     }
     console.log(Botinput)
 }
@@ -133,6 +159,10 @@ function ResetScore() {
   PlayerResult.innerText = ""
   BotResultImg.src = "filp.png"
   PlayerResultImg.src = "images.png"
+  RoundCount = 0
+  CountRound.innerText = RoundCount
+  RoundText.innerText = ""
+  CountRound.innerText = ""
 }
 
 
